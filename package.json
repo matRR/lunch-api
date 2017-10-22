@@ -28,7 +28,8 @@
     "winston": "^2.4.0"
   },
   "devDependencies": {
-    "apidoc": "^0.17.6"
+    "apidoc": "^0.17.6",
+    "surge": "^0.19.0"
   },
   "apidoc": {
     "title": "Lunches API documentation",
