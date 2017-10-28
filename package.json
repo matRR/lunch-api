@@ -2,8 +2,12 @@
   "name": "lunchs-api",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "6.11.5"
+  },
   "main": "app/app.js",
   "scripts": {
+    "start": "node app/app.js",    
     "test": "echo \"Error: no test specified\" && exit 1",
     "apidocs": "apidoc -i ./app/ -o ./apidocs/",
     "apidocs-deploy": "surge -p ./apidocs/ -d lunch-api-doc.surge.sh"
@@ -25,6 +29,9 @@
     "helmet": "^3.9.0",
     "moment": "^2.19.1",
     "morgan": "^1.9.0",
+    "pg": "^7.3.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.17.0",
     "winston": "^2.4.0"
   },
   "devDependencies": {
