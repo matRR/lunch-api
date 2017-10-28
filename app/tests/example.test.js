@@ -1,9 +1,9 @@
 const expect = require('expect');
 
-describe('example failing test for travis build', () => {
+describe('example success test for travis build', () => {
 
-  it('I am failing :(', () => {
-    expect(2).toBe(3);
+  it('I am not failing :)', () => {
+    expect(3).toBe(3);
   });
 
 });
