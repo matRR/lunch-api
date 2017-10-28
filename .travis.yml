@@ -10,8 +10,11 @@ script:
     - npm run apidocs
 
 deploy:
-    provider: script
-    script: npm run apidocs-deploy
-    skip_cleanup: true
-    on:
-        branch: master
+    - provider: script
+      script: npm run apidocs-deploy
+      skip_cleanup: true
+      on:
+      branch: master
+    - provider: heroku
+      api_key:
+        secure: poICtyqdAigQ3MgYn0Af7OkWqCLIwxVStWuggFJ1PLy3e32ksdD84CqzkheHaMxq40vyMr5urQIdb1Arw+Ehu2sNIZx4uoIAqE9MckU29wMzht11QP8p7v976Ib80Q7twvqID0s5DDrHlXsk+w4/Q4IJ5AG/l4w6y53peqD8MTzFAgePqc1hEMTRhNqpVZ5CmUFB8t+RcA6ooqC4DvCGZCQyjSPBlRpqemJSGfriFKGI0h8a7iYd8KUUXNlXYGjCGIHqwrAXYG8JrvILFu9GISTi8rKJPk0ib8ueS9rvZNNbgXAK4WEuLI9QD5dQcLtTA1e+kQRkk3p8P8cxA6v51xutmjE0vcJsBbTlx5YUDTCfSGUXWuuXZ1qjw3FXSryxm9ScvSeta5ymLtReZcBOF5OC9SqF25YYlFUEjr4AHQc6I/EukER1Pbq8lcUyARHJvcInRv55c2CyJskDRC1Z1Cd6+4ZB8U2+eNPrlLW6sIM96VGyP+XfJAlwrM49PUKddJfrOhV276xm+vj9UEE+L/C2v/9c8fD+Qmp4edjY7usAkoGa2KrUvIx18Gtt8cjazZDjx3loi25OC+h83DIAabwkhPZDZGXkldQCP5h/6b2w42ROcCLULh8hWlxJT1EnvufEDwRHoLzoqoau4ZXM97OR+40h9HfvmOfjAlDiYgE=
