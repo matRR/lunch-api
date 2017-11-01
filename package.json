@@ -48,7 +48,7 @@
   },
   "apidoc": {
     "title": "Lunche API documentation",
-    "url": "https://...",
+    "url": "/api/",
     "template": {
       "forceLanguage": "en"
     }

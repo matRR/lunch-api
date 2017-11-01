@@ -1,5 +1,5 @@
 /**
- * @api {get} /user Request Restaurants data
+ * @api {get} /restaurants Request Restaurants data
  * @apiName GetRestaurants
  * @apiGroup Restaurants
  *
