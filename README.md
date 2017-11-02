@@ -15,7 +15,7 @@ like [Heroku](https://www.heroku.com), check their [docs](https://www.heroku.com
 - Configure database connection string in [app/knexfile.js](app/knexfile.js)
 - `npm install`
 - Install global knex (used for database migrations) 
-`npm install knex`
+`npm install knex -g`
 - Migrate database (see [Migration](#database-migration) section)
 - `npm start` or `npm start:watch` to restart the server on any change in the source code
 
