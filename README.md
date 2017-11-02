@@ -19,7 +19,7 @@ like [Heroku](https://www.heroku.com), check their [docs](https://www.heroku.com
 - Migrate database (see [Migration](#database-migration) section)
 - `npm start` or `npm start:watch` to restart the server on any change in the source code
 
-Your local dev server is now up and running 
+Your local dev server is now up and running. Open your browser and go to `http://localhost:5000/`.
 
 ## Testing
 - `npm test` or `npm run test:watch` to restart the tests on any change in the source code

@@ -14,7 +14,7 @@ app.use(morgan('combined'))
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res) {
-  res.send('Hello Heroku - travis test ! part 2 - this is not going to be deployed [ci skip]');
+  res.send('Server is running');
 });
 
 const restaurantRoutes = require('./routes/restaurant')
