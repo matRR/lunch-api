@@ -1,5 +1,5 @@
 {
-  "name": "lunchs-api",
+  "name": "lunch-api",
   "version": "1.0.0",
   "description": "",
   "engines": {
@@ -47,8 +47,8 @@
     "surge": "^0.19.0"
   },
   "apidoc": {
-    "title": "Lunche API documentation",
-    "url": "/api/",
+    "title": "Lunch API documentation",
+    "url": "http://localhost:5000/api",
     "template": {
       "forceLanguage": "en"
     }
