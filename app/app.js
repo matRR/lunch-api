@@ -26,3 +26,5 @@ app.listen(app.get('port'), function() {
 
 app.use(logErrors)
 app.use(errorHandler)
+
+module.exports = { app };

@@ -4,8 +4,12 @@ node_js:
 cache:
   directories:
     - "node_modules"
+services:
+- postgresql
 install:
 - npm install
+before_script:
+- psql -c 'create database lunch-db;' -U postgres
 script:
 - npm test
 - npm run apidocs
