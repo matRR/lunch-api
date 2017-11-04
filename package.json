@@ -12,7 +12,8 @@
     "test": "mocha app/**/*.test.js",
     "test:watch": "nodemon --exec \"npm test\"",
     "apidocs": "apidoc -i ./app/ -o ./apidocs/",
-    "apidocs-deploy": "surge -p ./apidocs/ -d lunch-api-doc.surge.sh"
+    "apidocs-deploy": "surge -p ./apidocs/ -d lunch-api-doc.surge.sh",
+    "knex:migrate": "knex migrate:latest --knexfile app/knexfile.js"
   },
   "repository": {
     "type": "git",
