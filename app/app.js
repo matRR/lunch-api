@@ -9,7 +9,10 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(morgan('combined'))
+
+if(process.env.NODE_ENV === 'dev') {
+  app.use(morgan('combined'));
+}
 
 app.set('port', (process.env.PORT || 5000));
 
