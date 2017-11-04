@@ -13,7 +13,7 @@ describe('example success test for travis build', () => {
 
 });
 
-const { app } = require('./../app');
+//const { app } = require('./../app');
 
 // describe('GET /api/restaurants', () => {
 
