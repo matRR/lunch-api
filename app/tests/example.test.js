@@ -6,4 +6,8 @@ describe('example success test for travis build', () => {
     expect(3).toBe(3);
   });
 
+  it('I am not failing :) too', () => {
+    expect(310).toBe(310);
+  });
+
 });
