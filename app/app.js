@@ -23,11 +23,12 @@ app.get('/', function(req, res) {
 const restaurantRoutes = require('./routes/restaurant')
 app.use('/api/restaurants', restaurantRoutes);
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
 app.use(logErrors)
 app.use(errorHandler)
 
-module.exports = { app };
+const server = app.listen(app.get('port'), () => {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+
+module.exports = server;

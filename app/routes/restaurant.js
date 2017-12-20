@@ -7,14 +7,23 @@
 const router = require('express').Router();
 const db = require('../db/knex');
 
-router.get('/', function(req, res, next) {
+router.get('/', wrapPromise((req, res, next) => {
 
-  db('restaurants').select().then( rows => {
-    res.status(200).send({ rows });    
-  }).catch(err => {
-    res.status(500).send(err);
-  });
+  return db('restauranats').select().then(d => { return {rows: d} });
 
-});
+  // db('restaurantsa').select().then(rows => {
+  //   res.status(200).send({ rows });    
+  // }).catch(err => {
+  //   next(err);
+  // });
+
+}));
+
+function wrapPromise(fn) {
+  return function(req, res, next) {
+    fn(req, res, next).then(data => res.status(200).send(data)).catch(next);
+  }
+}
+
 
 module.exports = router;
