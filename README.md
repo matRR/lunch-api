@@ -11,7 +11,7 @@ like [Heroku](https://www.heroku.com), check their [docs](https://www.heroku.com
 ## Installing
 
 - Clone this repository
-- Create empty Postgres DB (on Windows you can use [PgAdmin](https://www.openscg.com/bigsql/pgadmin3/) or use [Heroku](https://www.heroku.com) or other cloud solution)
+- Create empty Postgres DB (on Windows you can use [PgAdmin](http://www.postgresqltutorial.com/install-postgresql/) or use [Heroku](https://www.heroku.com) or other cloud solution)
 - Configure database connection string in [app/knexfile.js](app/knexfile.js)
 - `npm install`
 - Install global knex (used for database migrations) 
